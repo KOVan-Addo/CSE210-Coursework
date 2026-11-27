@@ -4,6 +4,29 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Homework Project.");
+        // Create a Math Assignment
+        MathAssignment math = new MathAssignment(
+            "Roberto Rodriguez",
+            "Fractions",
+            "7.3",
+            "8-19"
+        );
+
+        // Display Math Assignment information
+        Console.WriteLine(math.GetSummary());
+        Console.WriteLine(math.GetHomeworkList());
+
+        Console.WriteLine();
+
+        // Create a Writing Assignment
+        WritingAssignment writing = new WritingAssignment(
+            "Mary Waters",
+            "European History",
+            "The Causes of World War II"
+        );
+
+        // Display Writing Assignment information
+        Console.WriteLine(writing.GetSummary());
+        Console.WriteLine(writing.GetWritingInformation());
     }
 }
